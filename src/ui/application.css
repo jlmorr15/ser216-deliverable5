@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#root{
+    -fx-background-color: #3188d4;
+    -fx-background-image: url("tiles.jpg");
+    -fx-background-size: 975 975;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.colBtnEnabled {
+    -fx-cursor: hand;
+}
