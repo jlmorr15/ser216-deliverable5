@@ -35,7 +35,8 @@ public class Connect4ComputerPlayer {
 			col = r.nextInt(6)+1;
 			break;
 		case 2:
-			col = game.getBestWinRatedColumn(game,2);
+			//col = game.getBestWinRatedColumn(game,2);
+			col = r.nextInt(6)+1;
 			break;
 		default:
 			col = r.nextInt(6)+1; // blindly return any column 1-7

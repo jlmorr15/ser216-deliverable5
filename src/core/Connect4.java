@@ -150,7 +150,7 @@ public class Connect4 {
     public boolean columnIsEmpty(int col) {
     	int row=0;
         //iterate down until we find a GamePiece or the bottom
-        while(row < 5 && getItemInSlot(row,col)==null) {
+        while(row < 6 && getItemInSlot(row,col)==null) {
         	if(row==5)
         		return true;
             row++;
@@ -193,11 +193,11 @@ public class Connect4 {
      * @param game Connect4 object
      * @param p int
      * @return
-     */
+
     public int getBestWinRatedColumn(Connect4 game, int p) {
     	return 0;
     }
-    
+    */
     
     /**
      * returns the win rating for a player on a specific column (no implemented)
@@ -205,7 +205,7 @@ public class Connect4 {
      * @param player
      * @param col
      * @return
-     */
+
     public int getWinRating(Connect4 game, int player, int col) {
     	int horizontal = 0;
     	int vertical = 0;
@@ -244,6 +244,8 @@ public class Connect4 {
     	
     	return horizontal+vertical+diag1+diag2;
     }
+
+     */
 
     /**
      * Checks how many continuously matching game pieces are in the given direction.
@@ -357,7 +359,7 @@ public class Connect4 {
      * @param row The row to check
      * @param col The column to check
      * @return Returns true if the move wins the game.
-     */
+
     public boolean checkWinConditions(int row, int col) {
         GamePiece piece = getItemInSlot(row,col);
         if(piece==null)
@@ -365,7 +367,8 @@ public class Connect4 {
 
         return checkWinConditions(piece);
     }
-    
+    */
+
     /**
      * 
      * @param piece
